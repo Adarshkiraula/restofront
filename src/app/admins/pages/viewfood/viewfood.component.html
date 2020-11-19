@@ -1,0 +1,32 @@
+<!-- <p>viewfood works!</p> -->
+<div  style="background-color:blue" class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">View Food</h1>
+      
+    </div>
+  </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <table class="table table-bordered table-dark">
+                <thead>
+                    <tr class="col-lg-12">
+                        <th scope="col">User</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Food_Id</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr  class="bg-primary" *ngFor='let data of datas'>
+                        <th scope="row">{{data.user}}</th>
+                        <td>{{data.status}}</td>
+                        <td>{{data.foodId}}</td>
+                       
+                    </tr>   
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
